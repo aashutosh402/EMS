@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/EMS")
+mongoose.connect("mongodb+srv://XGq6fu1bbsbLkTiE:qcSjRRqcXdtqiGv5@cluster0.2ctmc.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>{
   console.log("connection succesfull")
 }).catch((error)=>{
